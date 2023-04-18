@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Bill Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<image src="https://tse1.mm.bing.net/th?id=OIP.vm0xlVpX5yZXVMbOkr_rJQHaFk&pid=Api&P=0" class="img">
+	<div class="container">
+		<center><h1>Restaurant Bill Generator</h1></center>
+		<form id="order-form">
+			<label for="appetizers">Starters:</label>
+			<select id="appetizers" name="appetizers">
+				<option value="0">None</option>
+				<option value="4.99">Chicken wings</option>
+				<option value="5.99">Veg manchuria</option>
+				<option value="6.99">Chicken manchuria</option>
+			</select><br><br>
+
+			<label for="entrees">Main course:</label>
+			<select id="entrees" name="entrees">
+				<option value="0">None</option>
+				<option value="12.99">Chicken fried rice</option>
+				<option value="14.99">veg fried rice</option>
+				<option value="16.99">pulao</option>
+				<option value="17.99">butter chicken</option>
+			</select><br><br>
+
+			<label for="drinks">Drinks:</label>
+			<select id="drinks" name="drinks">
+				<option value="0">None</option>
+				<option value="2.99">thumbsup</option>
+				<option value="4.99">Pepsi</option>
+				<option value="5.99">Vanilla milkshake</option>
+				<option value="6.99">Chocolate milkshake</option>
+				<option value="7.99">Wine</option>
+			</select><br><br>
+
+			<label for="desserts">Desserts:</label>
+			<select id="desserts" name="desserts">
+				<option value="0">None</option>
+				<option value="3.99">vanilla cake</option>
+				<option value="4.99">Blackforest</option>
+				<option value="5.99">Chocolate Cake</option>
+			</select><br><br>
+			<button type="submit" name="submit-btn">Calculate Total</button>
+		</form>
+
+		<div id="total-container">
+			<p>Your total is: <span id="total"></span></p>
+		</div>
+	</div>
+
+	<script src="script1.js"></script>
+</body>
+</html>
+
+

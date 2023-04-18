@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body{
+font-weight:bold;
+background-image:url("https://tse4.mm.bing.net/th?id=OIP.HrZKFn6Z4K1k5QGDHvAMRQHaEo&pid=Api&P=0");
+background-repeat:no-repeat;
+background-size:1550px 800px;
+}
+
+input{
+border-color:coral;
+background-color:beige;
+}
+
+</style>
+</head>
+<body>
+<form method="post" action="handle.php" >
+		<h1 align="center">SIGN IN</h1><br><br>  
+
+        <center>Name: <input type="text" name="name">
+
+        <span class="error">* <?php echo $nameErr;?></span></center>
+
+        <br><br>
+
+        <center>E-mail: <input type="text" name="email">
+
+        <span class="error">* <?php echo $emailErr;?></span></center>
+
+        <br><br>
+
+        <center>Phone: <input type="text" name="phone">
+	<span class="error">* <?php echo $phoneErr;?></span></center>
+
+        <br><br>
+
+        <center>Gender:
+
+        <input type="radio" name="gender" value="female">Female
+
+        <input type="radio" name="gender" value="male">Male</center>
+
+            <span class="error">* <?php echo $genderErr;?></span>
+
+        <br><br>
+
+        <center><input type="submit" value="SUBMIT"></center><br><br> 
+	 <center><input type="reset" value=RESET></center><br><br> 
+
+    </form>
+    <center><form action="login.php" method="post">
+        <input type="submit" value="login">
+     </form></center>
+
+</body>
+</html>
